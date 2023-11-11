@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import "./NavBar.css";
-import { useEffect} from "react";
+import { useEffect, useState } from "react";
 
-const NavBar = ({pathname, setPathname}) => {
-
+const NavBar = ({ pathname, setPathname }) => {
 	setPathname(window.location.pathname.split("/")[1]);
 
 	const handleActiveMenu = () => {
@@ -21,8 +20,19 @@ const NavBar = ({pathname, setPathname}) => {
 		});
 	};
 
-	useEffect(() => {
+	const [showMenu, setShowMenu] = useState(true);
 
+	const handleMobileMenu = () => {
+		if (document.querySelector(".right-nav").style.display === "flex") {
+			document.querySelector(".right-nav").style.display = "none";
+			setShowMenu(!showMenu);
+		} else {
+			document.querySelector(".right-nav").style.display = "flex";
+			setShowMenu(!showMenu);
+		}
+	};
+
+	useEffect(() => {
 		if (pathname === "")
 			document.querySelector(".home").classList.add("active");
 		else {
@@ -40,12 +50,15 @@ const NavBar = ({pathname, setPathname}) => {
 							alt='GDA logo'
 							className='logo'
 						/>
-						<img src="/menu.png" className="menu" alt="" />
+						<img
+							src={showMenu ? "/menu.png" : "/close.png"}
+							onClick={handleMobileMenu}
+							className='menu'
+							alt=''
+						/>
 					</li>
 					<li className='right-nav'>
-						<span
-							className='home'
-							onClick={handleActiveMenu}>
+						<span className='home' onClick={handleActiveMenu}>
 							<Link to={"/"}>
 								<span>Home</span>
 							</Link>

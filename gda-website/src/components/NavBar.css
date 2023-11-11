@@ -67,6 +67,13 @@
 	}
 	.right-nav {
 		display: none;
+		/* display: flex; */
+		flex-direction: column;
+		padding: 3.3vh 0 2vh 0;
+		margin-top: 0.8vh;
+		box-shadow: 2px 2px 7px 2px;
+		border-radius: 14px;
+		z-index: 250;
 	}
 
 	.logo {
@@ -75,7 +82,7 @@
 
 	.menu {
         display: inline-block;
-		width: 12vw;
+		width: 10vw;
         transition: all 0.5s linear;
 	}
 

@@ -7,6 +7,7 @@ const HomePage = ({ setPathname }) => {
 
 	return (
 		<div className='home-container'>
+			<p id="mobile-title">GARG DEFENCE & AEROSPACE PVT. LTD.</p>
 			<div className='bg-filter'>
 				<video
 					muted

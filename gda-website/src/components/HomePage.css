@@ -90,32 +90,49 @@
 	text-decoration: underline;
 }
 
+.mobile-title {
+	display: none;
+}
+
 @media only screen and (max-width: 500px) {
 	.bg-filter {
-		top: 5vh;
+		top: 11vh;
 	}
 
 	.gda-tagline {
 		width: 90%;
 		font-size: 1.4rem;
-		top: 9vh;
+		top: 11vh;
 		font-weight: 200;
 		color: white;
 	}
 
 	.learnmore {
 		font-size: 0.9rem;
-		top: 25.5vh;
+		top: 28.5vh;
 		padding: 2vw;
 	}
 
 	.home-content {
-		top: 32vh;
+		top: 36vh;
 	}
 
 	.whyus {
 		font-size: 1.8rem;
 		padding: 0 6vw;
+	}
+
+	#mobile-title {
+		display: block;
+		z-index: 200;
+		position: absolute;
+		top: 6vh;
+		left: 50vw;
+		transform: translateX(-50%);
+		width: 100%;
+		text-align: center;
+		font-size: 0.87rem;
+		letter-spacing: 2.5px;
 	}
 
 	.key-items > div {
