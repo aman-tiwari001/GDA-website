@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 
@@ -55,7 +56,7 @@ const HomePage = ({ setPathname }) => {
 								width: "100%",
 								height: "100%",
 								margin: "0",
-								padding: "0.1vw 1vw 0vw 1vw"
+								padding: "0.1vw 1vw 0vw 1vw",
 							}}>
 							<h3>Specialized Drones:</h3>
 							<p>
@@ -82,7 +83,7 @@ const HomePage = ({ setPathname }) => {
 								width: "100%",
 								height: "100%",
 								margin: "0",
-								padding: "0.1vw 1vw 0vw 1vw"
+								padding: "0.1vw 1vw 0vw 1vw",
 							}}>
 							<h3>Innovation and R&D:</h3>
 							<p>
@@ -109,7 +110,7 @@ const HomePage = ({ setPathname }) => {
 								width: "100%",
 								height: "100%",
 								margin: "0",
-								padding: "0.1vw 1vw 0vw 1vw"
+								padding: "0.1vw 1vw 0vw 1vw",
 							}}>
 							<h3>Military-Grade Quality:</h3>
 							<p>
@@ -135,7 +136,7 @@ const HomePage = ({ setPathname }) => {
 								width: "100%",
 								height: "100%",
 								margin: "0",
-								padding: "0.1vw 1vw 0vw 1vw"
+								padding: "0.1vw 1vw 0vw 1vw",
 							}}>
 							<h3>Collaborations with Armed Forces:</h3>
 							<p>
@@ -162,7 +163,7 @@ const HomePage = ({ setPathname }) => {
 								width: "100%",
 								height: "100%",
 								margin: "0",
-								padding: "0.1vw 1vw 0vw 1vw"
+								padding: "0.1vw 1vw 0vw 1vw",
 							}}>
 							<h3>Government Partnerships:</h3>
 							<p>
@@ -191,7 +192,7 @@ const HomePage = ({ setPathname }) => {
 								width: "100%",
 								height: "100%",
 								margin: "0",
-								padding: "0.1vw 1vw 0vw 1vw"
+								padding: "0.1vw 1vw 0vw 1vw",
 							}}>
 							<h3>Navigation and Communication Systems:</h3>
 							<p>

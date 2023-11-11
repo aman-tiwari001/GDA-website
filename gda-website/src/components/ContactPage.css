@@ -1,0 +1,13 @@
+.contact-container {
+	margin: 0 2vw;
+	font-size: 1.1rem;
+    position: absolute;
+    top: 16vh;
+}
+
+.email {
+	display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 1.4rem
+}
