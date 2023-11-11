@@ -11,3 +11,17 @@
     flex-direction: column;
     font-size: 1.4rem
 }
+
+.cont-head {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width : 500px) {
+    .contact-container {
+        top: 6vh;
+        padding: 1vw 4vw;
+    }
+    .cont-head {
+        font-size: 1.8rem;
+    }
+}

@@ -14,7 +14,7 @@ const ContactPage = () => {
 
 	return (
 		<div className='contact-container'>
-			<h2 style={{ fontSize: "2rem" }}>Contact</h2>
+			<h2 className="cont-head">Contact</h2>
 			<div className='contact-content'>
 				<p>
 					Join us in shaping the future of defence technology. Contact

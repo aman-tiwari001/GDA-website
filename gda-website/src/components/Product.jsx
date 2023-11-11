@@ -3,9 +3,9 @@ import "./Product.css";
 const Product = () => {
 	return (
 		<div className='product-container'>
-			<h2 style={{ fontSize: "2rem" }}>Products</h2>
+			<h2>Products</h2>
 			<div>
-				<h2>Kamikaze drones : </h2>
+				<h2>1. Kamikaze drones : </h2>
 				<img
 					src='https://drishtiias.com/images/uploads/1666163685_Kamikaze_Drone_Drishti_IAS_English.png'
 					alt=''
@@ -42,7 +42,7 @@ const Product = () => {
 				</p>
 			</div>
 			<div>
-				<h2>Loitering munitions : </h2>
+				<h2>2. Loitering munitions : </h2>
 				<img
 					src='https://alphadefense.in/wp-content/uploads/2023/09/KK-1.jpeg'
 					alt=''
@@ -77,7 +77,7 @@ const Product = () => {
 				</p>
 			</div>
 			<div>
-				<h2>Anti-tank drone : </h2>
+				<h2>3. Anti-tank drone : </h2>
 				<img
 					src='https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/newscms/2018_33/2536566/180819-drone-hunter-se-907p.jpg'
 					alt=''
@@ -98,7 +98,7 @@ const Product = () => {
 				</p>
 			</div>
 			<div>
-				<h2>Surveillance drones : </h2>
+				<h2>4. Surveillance drones : </h2>
 				<img
 					src='https://reolink.com/images/blog/home-security/drone-quadcopter-for-scientific-research.jpg'
 					alt=''
