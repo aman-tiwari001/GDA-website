@@ -38,9 +38,9 @@ const NavBar = ({pathname, setPathname}) => {
 						<img
 							src='/gda-logo.png'
 							alt='GDA logo'
-							width={250}
 							className='logo'
 						/>
+						<img src="/menu.png" className="menu" alt="" />
 					</li>
 					<li className='right-nav'>
 						<span

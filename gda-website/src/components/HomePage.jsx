@@ -39,7 +39,7 @@ const HomePage = ({ setPathname }) => {
 				Learn More
 			</button>
 			<div className='home-content'>
-				<h2 style={{ fontSize: "2.5rem" }}>Why choose us?</h2>
+				<h2 className="whyus" >Why choose us?</h2>
 				<div className='key-items'>
 					<div
 						style={{
