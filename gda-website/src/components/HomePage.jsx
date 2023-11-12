@@ -1,9 +1,14 @@
 /* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
+import { useEffect } from "react";
 
-const HomePage = ({ setPathname }) => {
+const HomePage = ({ setPathname, setDocHeight }) => {
 	const navigate = useNavigate();
+
+	useEffect(() => {
+		setDocHeight(document.documentElement.scrollHeight);
+	}, []);
 
 	return (
 		<div className='home-container'>

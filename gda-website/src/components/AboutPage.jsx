@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import "./About.css";
 
-const AboutPage = () => {
+const AboutPage = ({setDocHeight}) => {
+
+		useEffect(() => {
+			setDocHeight(document.documentElement.scrollHeight);
+		}, []);
+
 	return (
 		<div className='about-container'>
 			<div className='about-content'>

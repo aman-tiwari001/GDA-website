@@ -1,7 +1,8 @@
+import { useEffect } from "react";
 import "./ContactPage.css";
 import GoogleMapReact from "google-map-react";
 
-const ContactPage = () => {
+const ContactPage = ({ setDocHeight }) => {
 	const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 	const defaultProps = {
@@ -12,9 +13,13 @@ const ContactPage = () => {
 		zoom: 16.5,
 	};
 
+	useEffect(() => {
+		setDocHeight(document.documentElement.scrollHeight);
+	}, []);
+
 	return (
 		<div className='contact-container'>
-			<h2 className="cont-head">Contact</h2>
+			<h2 className='cont-head'>Contact</h2>
 			<div className='contact-content'>
 				<p>
 					Join us in shaping the future of defence technology. Contact
@@ -34,8 +39,11 @@ const ContactPage = () => {
 					<span>Phone: +91 9205443367</span>
 				</div>
 				<div className='map'>
-                    <h3>Address : </h3>
-                    <p style={{fontSize:"1.4rem"}}>DTU IIF, AB4 8th Floor, Delhi Technological University, Delhi - 110042</p>
+					<h3>Address : </h3>
+					<p style={{ fontSize: "1.4rem" }}>
+						DTU IIF, AB4 8th Floor, Delhi Technological University,
+						Delhi - 110042
+					</p>
 					<div
 						style={{
 							height: "65vh",

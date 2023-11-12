@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import "./Product.css";
 
-const Product = () => {
+const Product = ({ setDocHeight }) => {
+
+		useEffect(() => {
+			setDocHeight(document.documentElement.scrollHeight);
+		}, []);
+
 	return (
 		<div className='product-container'>
 			<h2>Products</h2>

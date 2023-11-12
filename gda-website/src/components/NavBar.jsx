@@ -38,6 +38,10 @@ const NavBar = ({ pathname, setPathname }) => {
 		else {
 			document.querySelector("." + pathname).classList.add("active");
 		}
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
 	}, [pathname]);
 
 	return (

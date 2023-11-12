@@ -2,6 +2,59 @@
 	background: #000;
 	color: white;
 	padding: 2vw;
-    font-size: 1.1rem;
-    height: 20vh;
+	font-size: 1.1rem;
+	width: 95.9%;
+	z-index: 190;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+}
+
+.right-foot {
+	padding: 3vw 4vw;
+}
+
+.footer-links {
+	display: flex;
+	gap: 2vw;
+	padding: 1vw 0vw;
+}
+
+.right-sub-foot-1,
+.right-sub-foot-2,
+.right-sub-foot-3 {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-container img {
+	filter: invert(100%);
+}
+
+.socials-foot img {
+	width: 8vh;
+}
+
+.socials-foot {
+	display: flex;
+	gap: 1vw;
+}
+
+@media only screen and (max-width: 500px) {
+	.footer-container {
+		flex-direction: column;
+		font-size: 1rem;
+	}
+	.socials-foot img {
+		width: 5vh;
+	}
+	.socials-foot {
+		gap: 3vw;
+	}
+	.left-foot {
+		padding-left: 4vw;
+	}
+	.footer-links {
+		padding: 3vw 0vw;
+	}
 }
