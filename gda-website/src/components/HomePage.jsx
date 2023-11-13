@@ -9,7 +9,7 @@ const HomePage = ({ setPathname }) => {
 
 	useEffect(() => {
 		document.querySelector(".footer-container").style.top =
-			document.documentElement.scrollHeight - 140 + "px";
+			document.documentElement.scrollHeight + "px";
 	}, []);
 
 	return (
