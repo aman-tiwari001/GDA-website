@@ -4,8 +4,7 @@ import Footer from "./Footer";
 
 const Product = () => {
 	useEffect(() => {
-		document.querySelector(".footer-container").style.top =
-			document.documentElement.scrollHeight + 100 + "px";
+		document.querySelector(".footer-container").style.top = 2550 + "px";
 	}, []);
 
 	return (
