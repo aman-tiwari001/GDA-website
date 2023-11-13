@@ -1,5 +1,8 @@
 .careers-container {
-    font-size: 1.1rem;
-    width: 100%;
+    font-size: 1.2rem;
     text-align: center;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
 }

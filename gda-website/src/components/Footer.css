@@ -8,6 +8,7 @@
 	position: absolute;
 	display: flex;
 	justify-content: space-between;
+	top: 100px;
 }
 
 .right-foot {

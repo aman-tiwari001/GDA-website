@@ -1,13 +1,8 @@
-import { useEffect } from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
-const Footer = ({ docHeight, setDocHeight }) => {
-	useEffect(() => {
-		document.querySelector(".footer-container").style.top =
-			docHeight + 100 + "px";
-	}, [docHeight, setDocHeight]);
-
+const Footer = () => {
+	
 	return (
 		<>
 			<div className='footer-container'>

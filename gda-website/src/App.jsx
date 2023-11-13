@@ -5,7 +5,6 @@ import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import { useState } from "react";
 import ContactPage from "./components/ContactPage";
-import Footer from "./components/Footer";
 import Product from "./components/Product";
 import Careers from "./components/Careers";
 
@@ -13,8 +12,6 @@ function App() {
 	const [pathname, setPathname] = useState(
 		window.location.pathname.split("/")[1]
 	);
-
-	const [docHeight, setDocHeight] = useState(0);
 
 	return (
 		<>
@@ -24,35 +21,13 @@ function App() {
 					<Route
 						exact
 						path='/'
-						element={
-							<HomePage
-								setPathname={setPathname}
-								setDocHeight={setDocHeight}
-							/>
-						}
+						element={<HomePage setPathname={setPathname} />}
 					/>
-					<Route
-						exact
-						path='/about'
-						element={<AboutPage setDocHeight={setDocHeight} />}
-					/>
-					<Route
-						exact
-						path='/contact'
-						element={<ContactPage setDocHeight={setDocHeight} />}
-					/>
-					<Route
-						exact
-						path='/products'
-						element={<Product setDocHeight={setDocHeight} />}
-					/>
-					<Route
-						exact
-						path='/careers'
-						element={<Careers setDocHeight={setDocHeight} />}
-					/>
+					<Route exact path='/about' element={<AboutPage />} />
+					<Route exact path='/contact' element={<ContactPage />} />
+					<Route exact path='/products' element={<Product />} />
+					<Route exact path='/careers' element={<Careers />} />
 				</Routes>
-				<Footer docHeight={docHeight} setDocHeight={setDocHeight} />
 			</BrowserRouter>
 		</>
 	);
