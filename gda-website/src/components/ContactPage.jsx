@@ -18,7 +18,7 @@ const ContactPage = () => {
 
 	useEffect(() => {
 		document.querySelector(".footer-container").style.top =
-			document.documentElement.scrollHeight + "px";
+			document.documentElement.scrollHeight + 100 + "px";
 	}, []);
 
 	return (
